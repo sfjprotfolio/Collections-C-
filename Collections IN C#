@@ -1,0 +1,91 @@
+
+using System.Reflection.PortableExecutable;
+using System.Security.Cryptography.X509Certificates;
+
+namespace System.Collections
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            ArrayList myarrayList = new ArrayList();
+
+            myarrayList.Add(20);
+            myarrayList.Add(30);
+            myarrayList.Add(40);
+            myarrayList.Add(50);
+            myarrayList.Add(60);
+
+            foreach (var i in myarrayList)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            Hashtable hashtable = new Hashtable();
+
+            hashtable.Add("id", 1);
+            hashtable.Add("name", "fahad");
+            hashtable.Add("subject", "c#");
+
+
+            foreach (dynamic h in hashtable)
+            {
+                Console.WriteLine($" {h.Key} : {h.Value}");
+
+
+            }
+
+
+
+            Stack stack = new Stack();
+
+            stack.Push(20);
+            stack.Push(30);
+            stack.Push("reactDEV");
+
+
+            foreach (var item in stack)
+            {  
+
+                Console.WriteLine(stack.Peek());
+                //Console.WriteLine(stack.Pop());
+            }
+
+
+
+
+            Queue queue = new Queue();  
+
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            queue.Enqueue(50);
+
+            foreach (var q in queue)
+            {
+                Console.WriteLine(q);
+            }
+
+        }
+
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
